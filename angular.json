@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "notiflash": {
+    "NOTIFLASH": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -56,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "notiflash:build:production"
+              "buildTarget": "NOTIFLASH:build:production"
             },
             "development": {
-              "buildTarget": "notiflash:build:development"
+              "buildTarget": "NOTIFLASH:build:development"
             }
           },
           "defaultConfiguration": "development"

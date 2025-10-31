@@ -1,15 +1,12 @@
 import { Component, signal } from '@angular/core';
-import { Header } from './components/header/header';
-import { Footer } from './components/footer/footer';
 import { RouterOutlet } from '@angular/router';
-
 
 @Component({
   selector: 'app-root',
-  imports: [Header,  Footer, RouterOutlet],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
-  styleUrls: ['./app.css']
+  styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('notiflash');
+  protected readonly title = signal('NOTIFLASH');
 }
