@@ -1,0 +1,86 @@
+team-section {
+    padding: 40px 10%;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.section-title {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.team-intro {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contenedor de las Tarjetas */
+.members-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre las tarjetas */
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+/* Estilo de cada Tarjeta de Miembro */
+.member-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-5px); /* Pequeño efecto al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.member-name {
+    color: #C0392B; /* Color rojo de tu navbar */
+    font-size: 1.4em;
+    margin-top: 0;
+}
+
+.member-role {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.member-focus {
+    margin-top: 15px;
+    font-size: 0.95em;
+    color: #555;
+    border-top: 1px dashed #eee;
+    padding-top: 10px;
+}
+
+/* Información Adicional del Proyecto */
+.project-info {
+    padding: 30px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.project-info h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.note {
+    font-weight: bold;
+    color: #C0392B;
+}
