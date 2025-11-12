@@ -1,0 +1,137 @@
+/* ======= FONDO GLOBAL ======= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1920&q=80')
+              no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #f0f0f0;
+}
+
+/* ======= CONTENEDOR PRINCIPAL ======= */
+.categoria-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto 0 auto;
+  padding: 40px 20px;
+  background: rgba(15, 15, 15, 0.75);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ======= ENCABEZADO ======= */
+.categoria-header {
+  background: linear-gradient(135deg, #e50914, #1f1f1f);
+  color: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 15px rgba(229, 9, 20, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ======= PUBLICACIONES ======= */
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.post-card {
+  background: #c40812; /* Rojo más oscuro y elegante */
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4); /* 🌙 Brillo blanco más sutil */
+  color: #fff;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); /* Brillo un poco más fuerte al pasar el mouse */
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* ======= SECCIÓN LOGROS ======= */
+.logros-container {
+  margin: 60px auto 40px auto;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  padding: 70px 20px;
+  background: rgba(30, 30, 30, 0.85);
+  border-radius: 20px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logros-container h2 {
+  font-size: 2.5rem;
+  color: #e50914;
+  margin-bottom: 15px;
+  text-shadow: 0 0 6px rgba(229, 9, 20, 0.6);
+}
+
+.logros-container p {
+  color: #ccc;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+
+/* ======= TARJETAS DE LOGROS ======= */
+.logros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.logro-card {
+  background: #c40812; /* 🔴 Rojo elegante */
+  color: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logro-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+.logro-card h3 {
+  color: #fff;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+}
+
+.logro-card p {
+  color: #f1f1f1;
+  font-size: 1rem;
+  line-height: 1.5;
+}

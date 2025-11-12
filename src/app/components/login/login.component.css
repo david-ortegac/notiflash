@@ -1,0 +1,253 @@
+/* ===========================
+   ESTILOS GENERALES LOGIN
+=========================== */
+
+/* Fondo general */
+.login-background {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ff0000 0%, #000000 100%);
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  padding: 20px; /* Espacio general para pantallas pequeñas */
+}
+
+/* Tarjeta de login */
+.auth-card {
+  width: 420px;
+  padding: 2.5rem;
+  border-radius: 10px;
+  background: white;
+  border-top: 4px solid #b30000;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 1;
+}
+
+/* Header */
+.login-header {
+  margin-bottom: 1.5rem;
+}
+
+.site-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  color: #111;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.3rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Título */
+h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-family: 'Merriweather', serif;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #b30000;
+  box-shadow: 0 0 6px rgba(179, 0, 0, 0.4);
+  outline: none;
+}
+
+/* Botón principal */
+button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #b30000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #8c0000;
+  transform: translateY(-2px);
+}
+
+/* Enlace */
+p {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+p a {
+  color: #b30000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+p a:hover {
+  color: #8c0000;
+  text-decoration: underline;
+}
+
+/* Botón de registro secundario */
+.register-btn {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.8rem;
+  background: transparent;
+  color: #b30000;
+  border: 2px solid #b30000;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+  background: #b30000;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Mensajes de error */
+small {
+  color: #b30000;
+  font-size: 0.8rem;
+  display: block;
+  text-align: left;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.error-message {
+  color: #b30000;
+  background-color: #ffe5e5;
+  border: 1px solid #b30000;
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+/* =======================
+   MEDIA QUERIES
+======================= */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+  .login-background {
+    padding: 40px 25px;
+  }
+
+  .auth-card {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .site-title {
+    font-size: 1.6rem;
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  button {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+}
+
+/* Teléfonos grandes */
+@media (max-width: 480px) {
+  .login-background {
+    padding: 30px 15px;
+  }
+
+  .auth-card {
+    width: 100%;
+    padding: 1.8rem;
+  }
+
+  .site-title {
+    font-size: 1.5rem;
+  }
+
+  .tagline {
+    font-size: 0.85rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  button {
+    font-size: 0.9rem;
+    padding: 0.65rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Teléfonos pequeños (menos de 360px) */
+@media (max-width: 360px) {
+  .login-background {
+    padding: 20px 10px;
+  }
+
+  .auth-card {
+    padding: 1.5rem;
+  }
+
+  .site-title {
+    font-size: 1.4rem;
+  }
+
+  .tagline {
+    font-size: 0.8rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  button {
+    font-size: 0.85rem;
+    padding: 0.6rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,20 @@
+<div class="tecnologia-container">
+  <h1 class="titulo">{{ noticiaDestacada.titulo }}</h1>
+  <h3 class="subtitulo">{{ noticiaDestacada.subtitulo }}</h3>
+  <p class="meta">
+    Por {{ noticiaDestacada.autor }} — {{ noticiaDestacada.fecha }}
+  </p>
+
+  <div class="imagen-container">
+    <img [src]="noticiaDestacada.imagenUrl" alt="Imagen de tecnología">
+    <p class="pie-foto">Innovación y tecnología en Colombia — 2025</p>
+  </div>
+
+  <div class="contenido">
+    {{ noticiaDestacada.contenido }}
+  </div>
+
+  <div style="text-align:center;">
+    <button class="btn-volver" (click)="volverInicio()">⬅ Volver a Noticias</button>
+  </div>
+</div>

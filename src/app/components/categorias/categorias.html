@@ -1,0 +1,53 @@
+<div class="categoria-container">
+  <header class="categoria-header">
+    <h2>🌎 NotiFlash — Reconocimiento Nacional 🏆</h2>
+    <p>
+      NotiFlash ha sido reconocida como la mejor empresa de noticias del país 
+      por su innovación, compromiso con la verdad y su aporte al desarrollo 
+      del periodismo digital. Gracias a su equipo de profesionales y a su 
+      comunidad de lectores, NotiFlash continúa marcando la diferencia en la 
+      forma en que el mundo se informa.
+    </p>
+  </header>
+
+  <div class="feed">
+    <div *ngFor="let post of publicaciones" class="post-card">
+      <div class="post-header">
+        <img [src]="post.avatar" alt="avatar" class="avatar">
+        <div>
+          <h3>{{ post.usuario }}</h3>
+          <small>{{ post.hora }}</small>
+        </div>
+      </div>
+
+      <p class="post-text">{{ post.texto }}</p>
+
+      <img *ngIf="post.imagen" [src]="post.imagen" alt="imagen de noticia" class="post-img">
+    </div>
+  </div>
+</div>
+
+<!-- =============================== -->
+<!-- 🌟 SECCIÓN DE LOGROS -->
+<!-- =============================== -->
+<section class="logros-container">
+  <h2>🏅 Nuestros Logros</h2>
+  <p>En NotiFlash trabajamos cada día para ofrecer información veraz, rápida y confiable. Estos son algunos de nuestros hitos más importantes:</p>
+
+  <div class="logros-grid">
+    <div class="logro-card">
+      <h3>Premio a la Innovación</h3>
+      <p>Reconocidos por implementar inteligencia artificial en la redacción de noticias en tiempo real.</p>
+    </div>
+
+    <div class="logro-card">
+      <h3>Excelencia Periodística</h3>
+      <p>Premio nacional al compromiso con la verdad, la objetividad y la ética informativa.</p>
+    </div>
+
+    <div class="logro-card">
+      <h3>Expansión Global</h3>
+      <p>Presencia en más de 10 países con corresponsales y alianzas internacionales.</p>
+    </div>
+
+   

@@ -1,0 +1,19 @@
+<div class="autores-header">
+    <h1>Conoce a Nuestro Equipo</h1>
+    <p>Ellos son las personas apasionadas que hacen posible NOTIFLASH.</p>
+</div>
+
+<div class="autores-grid">
+  <a 
+    *ngFor="let autor of autores" 
+    [routerLink]="['/autores', autor.ruta]" 
+    class="autor-card"
+  >
+    <div class="card-content">
+      <h2 class="autor-nombre">{{ autor.nombre }}</h2>
+      <p class="autor-rol">{{ autor.rol }}</p>
+      <p class="autor-bio">{{ autor.bio }}</p>
+      <span class="explore-link">Ver Artículos &rarr;</span>
+    </div>
+  </a>
+</div>

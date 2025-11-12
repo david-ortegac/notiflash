@@ -1,0 +1,162 @@
+/* ===========================
+   ESTILOS GENERALES REGISTER
+=========================== */
+
+/* Fondo centrado */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff0000 0%, #000000 100%);
+  font-family: Arial, sans-serif;
+  padding: 20px; /* Espacio adicional en pantallas pequeñas */
+}
+
+/* Tarjeta del formulario */
+.auth-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 380px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Encabezado superior */
+.login-header .site-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+}
+
+.login-header .tagline {
+  color: #555555;
+  margin-bottom: 1.5rem;
+}
+
+/* Inputs */
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+}
+
+form input:focus {
+  border-color: #b30000;
+}
+
+/* Botón */
+button {
+  width: 100%;
+  background-color: #b30000;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #8c0000;
+}
+
+/* Enlace inferior */
+p a {
+  color: #b30000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* =======================
+   MEDIA QUERIES
+======================= */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+  .auth-wrapper {
+    padding: 40px 20px;
+  }
+
+  .auth-card {
+    width: 90%;
+    padding: 1.8rem;
+  }
+
+  .login-header .site-title {
+    font-size: 1.8rem;
+  }
+
+  .login-header .tagline {
+    font-size: 1rem;
+  }
+
+  form input,
+  button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+/* Teléfonos grandes */
+@media (max-width: 480px) {
+  .auth-wrapper {
+    padding: 30px 15px;
+  }
+
+  .auth-card {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .login-header .site-title {
+    font-size: 1.6rem;
+  }
+
+  .login-header .tagline {
+    font-size: 0.9rem;
+  }
+
+  form input,
+  button {
+    font-size: 14px;
+    padding: 9px;
+  }
+}
+
+/* Teléfonos pequeños (menos de 360px) */
+@media (max-width: 360px) {
+  .auth-wrapper {
+    padding: 20px 10px;
+  }
+
+  .auth-card {
+    padding: 1.2rem;
+  }
+
+  .login-header .site-title {
+    font-size: 1.4rem;
+  }
+
+  .login-header .tagline {
+    font-size: 0.85rem;
+  }
+
+  form input,
+  button {
+    font-size: 13px;
+    padding: 8px;
+  }
+}

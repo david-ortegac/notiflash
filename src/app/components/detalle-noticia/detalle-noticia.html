@@ -1,0 +1,38 @@
+<div *ngIf="noticia" class="article-container">
+    
+    <!-- Imagen Principal (Cabecera). Asegúrate de tener imágenes grandes en src/assets/noticias/ -->
+    <div class="article-header-image" 
+         [style.backgroundImage]="'url(assets/noticias/' + noticia.imagen + ')'">
+    </div>
+
+    <div class="article-content-wrapper">
+        <!-- Metadatos y Título -->
+        <header class="article-header">
+            <span class="article-category">{{ noticia.categoria | uppercase }}</span>
+            <h1>{{ noticia.titulo }}</h1>
+            <div class="article-meta">
+                <span>Por **{{ noticia.autor }}**</span>
+                <span>•</span>
+                <span>{{ noticia.fecha }}</span>
+            </div>
+        </header>
+
+        <!-- Cuerpo del Artículo -->
+        <section class="article-body">
+            <p>{{ noticia.cuerpo }}</p>
+            <p>Este es el segundo párrafo del artículo. Aquí se desarrollaría la idea principal con más detalle y profundidad, proporcionando análisis y contexto relevante para el lector de NOTIFLASH.</p>
+        </section>
+
+        <!-- Botón de Regreso -->
+        <button [routerLink]="['/noticias', noticia.categoria.toLowerCase()]" class="back-button">
+            &larr; Volver a {{ noticia.categoria }}
+        </button>
+    </div>
+
+</div>
+
+<!-- Mensaje si la noticia no se encuentra -->
+<div *ngIf="!noticia && noticiaId" class="not-found-message">
+    <h2>Noticia no encontrada (ID: {{ noticiaId }})</h2>
+    <p>Lo sentimos, el artículo que buscas no existe o ha sido eliminado.</p>
+</div>

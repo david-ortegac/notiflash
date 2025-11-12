@@ -1,0 +1,40 @@
+<div class="noticias-container">
+
+  <header class="seccion-header">
+    <h1>Últimas Noticias</h1>
+
+   
+    <div class="buscador">
+      <input type="text"
+             placeholder="Buscar noticias..."
+             [(ngModel)]="terminoBusqueda"
+             (input)="filtrarNoticias()">
+    </div>
+  </header>
+
+  <div class="noticias-grid">
+
+    <!-- ✅ Mostrar cada noticia -->
+    <div class="noticia-card" *ngFor="let noticia of noticiasFiltradas"
+         (click)="verDetalle(noticia)">
+      <div class="card-imagen">
+        <img [src]="noticia.imagenUrl" [alt]="noticia.titulo">
+      </div>
+      <div class="card-body">
+        <span class="card-categoria">{{ noticia.categoria }}</span>
+        <h2>{{ noticia.titulo }}</h2>
+        <p class="card-extracto">{{ noticia.extracto }}</p>
+        <div class="card-meta">
+          <span class="meta-autor">Por: {{ noticia.autor }}</span>
+          <span class="meta-fecha">{{ noticia.fecha | date:'mediumDate' }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⚠️ Si no hay resultados -->
+    <div *ngIf="noticiasFiltradas.length === 0" class="no-noticias">
+      <p>No se encontraron noticias con el término "{{ terminoBusqueda }}".</p>
+    </div>
+
+  </div>
+</div>

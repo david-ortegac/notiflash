@@ -1,0 +1,72 @@
+/* En src/app/components/autores/autores.css */
+
+.autores-header {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.autores-header h1 {
+    color: #ff0000; /* Título principal rojo */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.autores-header p {
+    color: #212529;
+    font-size: 1.1rem;
+}
+
+.autores-grid {
+    display: grid;
+    /* Cuadrícula de 3 columnas con espacio de 30px */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    padding: 30px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.autor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    text-decoration: none; /* Quitar el subrayado del enlace */
+    color: #212529;
+    transition: all 0.3s ease-in-out;
+}
+
+.autor-card:hover {
+    transform: translateY(-8px); /* Efecto de levantamiento */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    border-color: #ff0000; /* Borde al pasar el ratón */
+}
+
+.autor-nombre {
+    color: #ff0000;
+    font-size: 1.5rem;
+    margin: 10px 0 5px 0;
+}
+
+.autor-rol {
+    color: #555;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.explore-link {
+    display: block;
+    margin-top: 15px;
+    color: #000;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.explore-link:hover {
+    border-bottom: 2px solid #ff0000;
+}

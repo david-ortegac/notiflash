@@ -1,0 +1,69 @@
+.noticia-container {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #1a1a1a; /* 🔲 Fondo negro elegante */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.2); /* ✨ Sombra con tono rojo */
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ff3b3b; /* 🔴 Rojo fuerte para títulos */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h3 {
+  color: #ccc; /* Gris claro */
+  font-weight: 400;
+  text-align: center;
+}
+
+.meta {
+  color: #999; /* Gris medio */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.imagen-noticia {
+  display: block;
+  width: 70%; /* 📏 Imagen mediana */
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 3px solid #ff3b3b; /* 🔴 Borde rojo */
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+.pie-foto {
+  text-align: center;
+  font-style: italic;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.contenido {
+  line-height: 1.8;
+  color: #f0f0f0; /* Texto claro sobre fondo oscuro */
+  text-align: justify;
+}
+
+.btn-volver {
+  background: #ff3b3b; /* 🔴 Rojo principal */
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn-volver:hover {
+  background: #b30000; /* 🔥 Rojo oscuro al pasar el mouse */
+  transform: scale(1.05);
+}

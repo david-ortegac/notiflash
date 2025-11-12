@@ -1,0 +1,21 @@
+<div class="noticia-detalle-container">
+  <div class="noticia-card">
+    <!-- 🏷️ Título -->
+    <h1 class="noticia-titulo">{{ noticia.titulo }}</h1>
+
+    <!-- 🕒 Autor y fecha -->
+    <p class="noticia-meta">
+      <strong>{{ noticia.autor }}</strong> · 
+      {{ noticia.fecha | date:'longDate' }}
+    </p>
+
+    <!-- 🌆 Imagen debajo del título -->
+    <img [src]="noticia.imagenUrl" alt="Imagen de noticia" class="noticia-imagen">
+
+    <!-- 📖 Contenido -->
+    <p class="noticia-contenido">{{ noticia.contenido }}</p>
+
+    <!-- 🔙 Botón -->
+    <button class="btn-regresar" (click)="regresar()">← Volver a Noticias</button>
+  </div>
+</div>
